@@ -530,20 +530,30 @@ a:hover {
   position: relative;
   font-weight: 300;
   font-size: 24px;
-  line-height: 1.9;
+  line-height: 1.5;
+  margin-bottom: 8px;
   color: #171A40;
 }
 
 .dual-background.type-2 .content ul li::before {
   content: '';
   position: absolute;
-  top: 13px;
+  top: 10px;
   left: -24px;
   height: 0;
   width: 0;
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
   border-left: 13px solid #008BFF;
+}
+
+@media (max-width: 767.98px) {
+  .dual-background.type-2 .content ul li {
+    font-size: 18px;
+  }
+  .dual-background.type-2 .content ul li::before {
+    top: 3px;
+  }
 }
 
 .dual-background.type-2 .ring {
@@ -1118,5 +1128,255 @@ a:hover {
   position: absolute;
   left: 0;
   top: 8px;
+}
+
+.gradient-bg {
+  background: transparent linear-gradient(240deg, #00F6FF 0%, #A7F4FF 10%, #D4F7FF 26%, #B8E0FF 63%, #71B7F1 81%, #465FFF 100%) 0% 0% no-repeat padding-box;
+  padding: 67px 0 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.gradient-bg .ring {
+  position: absolute;
+}
+
+.gradient-bg .ring.ring1 {
+  top: 256px;
+  left: 15%;
+}
+
+@media (max-width: 991.98px) {
+  .gradient-bg .ring.ring1 {
+    left: 5%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .gradient-bg .ring.ring1 {
+    display: none;
+  }
+}
+
+.gradient-bg .ring.ring2 {
+  top: 142px;
+  right: 15%;
+}
+
+@media (max-width: 991.98px) {
+  .gradient-bg .ring.ring2 {
+    right: 5%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .gradient-bg .ring.ring2 {
+    right: -5%;
+  }
+}
+
+.gradient-bg .ring.ring3 {
+  bottom: 24px;
+  left: 17%;
+}
+
+@media (max-width: 991.98px) {
+  .gradient-bg .ring.ring3 {
+    left: 7%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .gradient-bg .ring.ring3 {
+    left: -7%;
+  }
+}
+
+.gradient-bg .ring.ring4 {
+  bottom: 80px;
+  right: 28%;
+}
+
+@media (max-width: 991.98px) {
+  .gradient-bg .ring.ring4 {
+    right: 10%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .gradient-bg .ring.ring4 {
+    right: 5%;
+  }
+}
+
+.gradient-bg .section-title {
+  margin-bottom: 21px;
+}
+
+.gradient-bg .des {
+  text-align: center;
+  color: #171A40;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.54;
+  max-width: 768px;
+  margin: 0 auto 70px;
+  opacity: 0.8;
+}
+
+.triangle-slider {
+  height: 100%;
+}
+
+.triangle-slider .triangle-slide {
+  position: relative;
+  border: 10px solid #FFFFFF;
+  border-radius: 30px;
+  padding: 56px 16.8% 30px;
+  height: calc(100% - 76px);
+  margin-bottom: 76px;
+}
+
+@media (max-width: 575.98px) {
+  .triangle-slider .triangle-slide {
+    padding: 56px 10% 30px;
+  }
+}
+
+.triangle-slider .triangle-slide .slide-number {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 67px;
+  width: 67px;
+  border-radius: 50%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 5px 10px #171A401A;
+          box-shadow: 0px 5px 10px #171A401A;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+  color: #00DEFF;
+}
+
+.triangle-slider .triangle-slide .slide-title {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 1.5;
+  color: #008BFF;
+  margin-bottom: 14px;
+}
+
+.triangle-slider .triangle-slide .slide-text {
+  line-height: 24px;
+  color: #171A40;
+  opacity: 0.8;
+  margin-bottom: 15px;
+}
+
+.triangle-slider .triangle-slide .slide-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.triangle-slider .triangle-slide .slide-icons img {
+  width: 25%;
+}
+
+.triangle-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+.triangle-nav .prev, .triangle-nav .next {
+  position: static;
+  margin: 0 15px;
+}
+
+.triangle-nav .prev::after, .triangle-nav .next::after {
+  display: none;
+}
+
+.triangle-nav .triangle-site-number {
+  position: static;
+  width: initial;
+  margin: 0 17px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 1.5;
+  color: #FFFFFF;
+}
+
+svg.smcm-triangle-chart {
+  margin-bottom: 76px;
+}
+
+svg.smcm-triangle-chart .triangle,
+svg.smcm-triangle-chart .triangle-circle {
+  fill: #fff;
+}
+
+svg.smcm-triangle-chart .triangle-name {
+  fill: #008BFF;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+svg.smcm-triangle-chart .triangle-name.active {
+  fill: #fff;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+svg.smcm-triangle-chart .triangle {
+  cursor: pointer;
+}
+
+svg.smcm-triangle-chart .triangle.active {
+  fill: #00DEFF;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+svg.smcm-triangle-chart .triangle-circle {
+  stroke: #b9b9c5;
+  stroke-width: 2;
+}
+
+svg.smcm-triangle-chart .triangle-arrow {
+  fill: none;
+  stroke: #00DEFF;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */
